@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+div {
+  font-family: 'BCSans', 'Noto Sans', sans-serif;
+}
+
+.cell-animation {
+  animation: revealCharCell linear;
+  animation-duration: 0.15s;
+}
+
+@keyframes revealCharCell {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
